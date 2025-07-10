@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Empower Your Business Growth</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+    .testimonial-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.6s ease;
+    border-radius: 1.5rem;
+  }
+  </style>
+</head>
+<body class="font-sans">
+
+  <!-- Header Navigation -->
+  <header class="absolute top-0 left-0 w-full z-10">
+    <div class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="text-white font-bold text-3xl">BizGrowth</div>
+
+      <!-- Navigation Links -->
+      <nav class="space-x-6 text-white font-medium text-sm hidden md:flex">
+        <a href="#home" class="hover:underline">Homepage</a>
+        <a href="#about" class="hover:underline">About Us</a>
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#testimonials" class="hover:underline">Testimonials</a>
+        <a href="#contact" class="hover:underline">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/90 to-gray-600/70"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 text-center text-white px-6 max-w-2xl">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-6">Empower Your Business Growth</h1>
+      <p class="text-lg mb-8">Unlock your company's full potential with tailored business solutions, expert consulting, and innovative strategies for sustainable success.</p>
+      <div class="flex justify-center gap-4 flex-wrap">
+        <a href="#" class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-3 rounded-md transition">Get Started</a>
+        <a href="#" class="border border-white hover:bg-white hover:text-blue-800 text-white font-semibold px-6 py-3 rounded-md transition">Our Solutions</a>
+      </div>
+    </div>
+
+    <!-- Scroll Down Icon -->
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+      <div class="animate-bounce text-white text-2xl">
+        ↓
+      </div>
+    </div>
+  </section>
+<!-- About Us Section -->
+<section id="about" class="bg-gray-50 py-20">
+  <!-- Heading -->
+    <h2 class="text-4xl font-bold mb-4 text-center p-6">
+      About <span class="text-purple-600 ">Us</span>
+    </h2>
+
+  <div class="max-w-7xl mx-auto px-6 flex flex-col-reverse lg:flex-row items-center gap-10 p-6">
+    
+    <!-- Left: Text -->
+    <div class="text-center lg:text-left lg:w-1/2">
+      <h2 class="text-4xl font-extrabold mb-4">Hello <span class="inline-block">👋</span> We are BizGrowth Consulting</h2>
+      <p class="text-gray-600 text-lg leading-relaxed mb-6">
+        BizGrowth Consulting specializes in driving business transformation through strategic planning, digital innovation, and operational excellence. Our team of experts partners with organizations to deliver measurable results and sustainable growth.
+      </p>
+      <p class="text-gray-700 text-base">
+        <span class="underline decoration-yellow-300 decoration-4">Have a business challenge?</span> Connect with us on 
+        <a href="https://twitter.com" target="_blank" class="text-blue-500 hover:underline">Twitter</a>
+      </p>
+    </div>
+
+    <!-- Right: Image -->
+    <div class="lg:w-1/2 flex justify-center relative">
+      <div class="relative z-10">
+        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=600&q=80" alt="BizGrowth Team" class="rounded-xl w-full max-w-md">
+      </div>
+      <div class="absolute bottom-[-40px] left-[-40px] w-56 h-56 bg-purple-600 rounded-full z-0"></div>
+    </div>
+
+  </div>
+</section>
+<!-- Services Section -->
+<section id="services" class="bg-white py-20">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <!-- Heading -->
+    <h2 class="text-4xl font-bold mb-4">
+      Our <span class="text-purple-600">Services</span>
+    </h2>
+    <p class="text-gray-500 max-w-2xl mx-auto mb-12">
+      We deliver innovative business solutions to help your company scale, automate, and thrive in a competitive marketplace.
+    </p>
+
+    <!-- Swiper Carousel -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Card 1 (Purple) -->
+        <div class="swiper-slide bg-purple-600 text-white p-8 rounded-lg text-center shadow transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-purple-700 cursor-pointer">
+          <div class="text-4xl mb-4">📈</div>
+          <h3 class="text-lg font-semibold mb-2">Digital Strategy</h3>
+          <p class="text-sm text-white">
+            Elevate your brand with data-driven digital marketing, SEO, and online campaigns.
+          </p>
+        </div>
+
+        <!-- Card 2 (Gray) -->
+        <div class="swiper-slide bg-gray-100 p-8 rounded-lg text-center shadow transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer">
+          <div class="text-4xl mb-4">💼</div>
+          <h3 class="text-lg font-semibold mb-2">Business Consulting</h3>
+          <p class="text-gray-600 text-sm">
+            Expert advice to optimize operations, increase efficiency, and maximize ROI.
+          </p>
+        </div>
+
+        <!-- Card 3 (Purple) -->
+        <div class="swiper-slide bg-purple-600 text-white p-8 rounded-lg text-center shadow transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-purple-700 cursor-pointer">
+          <div class="text-4xl mb-4">🛒</div>
+          <h3 class="text-lg font-semibold mb-2">E-Commerce Solutions</h3>
+          <p class="text-sm text-white">
+            Launch and grow your online store with seamless integration and customer-centric design.
+          </p>
+        </div>
+
+        <!-- Card 4 (Gray) -->
+        <div class="swiper-slide bg-gray-100 p-8 rounded-lg text-center shadow transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer">
+          <div class="text-4xl mb-4">📊</div>
+          <h3 class="text-lg font-semibold mb-2">Analytics & Insights</h3>
+          <p class="text-gray-600 text-sm">
+            Actionable analytics to drive smarter decisions and accelerate business growth.
+          </p>
+        </div>
+
+        <!-- Card 5 (Purple) -->
+        <div class="swiper-slide bg-purple-600 text-white p-8 rounded-lg text-center shadow transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-purple-700 cursor-pointer">
+          <div class="text-4xl mb-4">⚙️</div>
+          <h3 class="text-lg font-semibold mb-2">Process Automation</h3>
+          <p class="text-sm text-white">
+            Streamline workflows and reduce costs with intelligent automation solutions.
+          </p>
+        </div>
+
+        <!-- Card 6 (Gray) -->
+        <div class="swiper-slide bg-gray-100 p-8 rounded-lg text-center shadow transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer">
+          <div class="text-4xl mb-4">🌐</div>
+          <h3 class="text-lg font-semibold mb-2">Global Expansion</h3>
+          <p class="text-gray-600 text-sm">
+            Expand your business reach with our international market entry strategies.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Tailwind-based Testimonial Section -->
+<section id="testimonials" class="bg-gray-100 py-20">
+  <h2 class="text-4xl font-bold mb-4 text-center p-6">
+    <span class="text-purple-600">Testimonials</span> 
+  </h2>
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <!-- Image Side -->
+    <div class="relative h-96 w-full overflow-hidden rounded-3xl" id="image-container"></div>
+
+    <!-- Text Side -->
+    <div class="flex flex-col justify-between h-full">
+      <div>
+        <h3 class="text-2xl font-bold text-gray-800 mb-1" id="name"></h3>
+        <p class="text-sm text-gray-500 mb-6" id="designation"></p>
+        <p class="text-lg text-gray-700 leading-relaxed" id="quote"></p>
+      </div>
+      <!-- Arrows -->
+      <div class="flex gap-4 pt-10 md:pt-0">
+        <button class="w-8 h-8 rounded-full bg-gray-800 hover:bg-blue-600 flex items-center justify-center" id="prev-button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button class="w-8 h-8 rounded-full bg-gray-800 hover:bg-blue-600 flex items-center justify-center" id="next-button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Form Section -->
+<form action="https://fabform.io/f/xxxxx" method="post" id="contact">
+  <section class="py-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 grid-cols-1">
+        <div class="lg:mb-0 mb-10">
+          <div class="group w-full h-full">
+            <div class="relative h-full">
+              <img src="https://pagedone.io/asset/uploads/1696488602.png" alt="ContactUs tailwind section" class="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-indigo-700"/>
+              <h1 class="font-manrope text-white text-4xl font-bold leading-10 absolute top-11 left-11">Contact BizGrowth</h1>
+              <div class="absolute bottom-0 w-full lg:p-11 p-5">
+                <div class="bg-white rounded-lg p-6 block">
+                  <a href="javascript:;" class="flex items-center mb-6">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.3092 18.3098C22.0157 18.198 21.8689 18.1421 21.7145 18.1287C21.56 18.1154 21.4058 18.1453 21.0975 18.205L17.8126 18.8416C17.4392 18.9139 17.2525 18.9501 17.0616 18.9206C16.8707 18.891 16.7141 18.8058 16.4008 18.6353C13.8644 17.2551 12.1853 15.6617 11.1192 13.3695C10.9964 13.1055 10.935 12.9735 10.9133 12.8017C10.8917 12.6298 10.9218 12.4684 10.982 12.1456L11.6196 8.72559C11.6759 8.42342 11.7041 8.27233 11.6908 8.12115C11.6775 7.96998 11.6234 7.82612 11.5153 7.5384L10.6314 5.18758C10.37 4.49217 10.2392 4.14447 9.95437 3.94723C9.6695 3.75 9.29804 3.75 8.5551 3.75H5.85778C4.58478 3.75 3.58264 4.8018 3.77336 6.06012C4.24735 9.20085 5.64674 14.8966 9.73544 18.9853C14.0295 23.2794 20.2151 25.1426 23.6187 25.884C24.9335 26.1696 26.0993 25.1448 26.0993 23.7985V21.2824C26.0993 20.5428 26.0993 20.173 25.9034 19.8888C25.7076 19.6046 25.362 19.4729 24.6708 19.2096L22.3092 18.3098Z" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <h5 class="text-black text-base font-normal leading-6 ml-5">+1 (800) 555-0199</h5>
+                                </a>
+                                <a href="mailto:info@bizgrowth.com" class="flex items-center mb-6">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.81501 8.75L10.1985 13.6191C12.8358 15.2015 14.1544 15.9927 15.6032 15.9582C17.0519 15.9237 18.3315 15.0707 20.8905 13.3647L27.185 8.75M12.5 25H17.5C22.214 25 24.5711 25 26.0355 23.5355C27.5 22.0711 27.5 19.714 27.5 15C27.5 10.286 27.5 7.92893 26.0355 6.46447C24.5711 5 22.214 5 17.5 5H12.5C7.78595 5 5.42893 5 3.96447 6.46447C2.5 7.92893 2.5 10.286 2.5 15C2.5 19.714 2.5 22.0711 3.96447 23.5355C5.42893 25 7.78595 25 12.5 25Z" stroke="#4F46E5" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                    <h5 class="text-black text-base font-normal leading-6 ml-5">info@bizgrowth.com</h5>
+                                </a>
+                                <a href="javascript:;" class="flex items-center">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25 12.9169C25 17.716 21.1939 21.5832 18.2779 24.9828C16.8385 26.6609 16.1188 27.5 15 27.5C13.8812 27.5 13.1615 26.6609 11.7221 24.9828C8.80612 21.5832 5 17.716 5 12.9169C5 10.1542 6.05357 7.5046 7.92893 5.55105C9.8043 3.59749 12.3478 2.5 15 2.5C17.6522 2.5 20.1957 3.59749 22.0711 5.55105C23.9464 7.5046 25 10.1542 25 12.9169Z" stroke="#4F46E5" stroke-width="2"/>
+                                        <path d="M17.5 11.6148C17.5 13.0531 16.3807 14.219 15 14.219C13.6193 14.219 12.5 13.0531 12.5 11.6148C12.5 10.1765 13.6193 9.01058 15 9.01058C16.3807 9.01058 17.5 10.1765 17.5 11.6148Z" stroke="#4F46E5" stroke-width="2"/>
+                                    </svg>
+                                    <h5 class="text-black text-base font-normal leading-6 ml-5">123 Enterprise Ave, Suite 400, New York, NY 10001</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl">
+                <h2 class="text-indigo-600 font-manrope text-4xl font-semibold leading-10 mb-11">Send Us a Business Inquiry</h2>
+                <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Your Name">
+                <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Business Email">
+                <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Phone Number">
+                <div class="mb-10">
+                    <h4 class="text-gray-500 text-lg font-normal leading-7 mb-4">Preferred method of communication</h4>
+                    <div class="flex">
+                        <div class="flex items-center mr-11">
+                            <input id="radio-group-1" type="radio" name="radio-group" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                            <label for="radio-group-1" class="flex items-center cursor-pointer text-gray-500 text-base font-normal leading-6">
+                                <span class="border border-gray-300 rounded-full mr-2 w-4 h-4  ml-2 "></span> Email 
+                            </label>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="radio-group-2" type="radio" name="radio-group" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                            <label for="radio-group-2" class="flex items-center cursor-pointer text-gray-500 text-base font-normal leading-6">
+                                <span class="border border-gray-300  rounded-full mr-2 w-4 h-4  ml-2 "></span> Phone 
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="How can we help your business?">
+                <button class="w-full h-12 text-white text-base font-semibold leading-6 rounded-full transition-all duration-700 hover:bg-indigo-800 bg-indigo-600 shadow-sm">Send Inquiry</button>
+        </div>
+      </div>
+    </section>
+    </form>
+  
+  <footer class="bg-[#0D084D] text-white">
+  <div class="max-w-7xl mx-auto px-4 py-12">
+    <div class="flex flex-col lg:flex-row justify-between gap-8 border-b border-white/10 pb-10">
+      <div>
+        <img src="logo.svg" alt="BizGrowth Logo" class="mb-4 w-24">
+        <div class="flex gap-4 mt-4">
+          <a href="#" class="text-white hover:text-blue-500"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white hover:text-blue-600"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="text-white hover:text-red-500"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-sm">
+        <div>
+          <h3 class="font-semibold text-white mb-4">Company</h3>
+          <ul class="space-y-2">
+            <li><a href="#home" class="hover:underline">Homepage</a></li>
+            <li><a href="#about" class="hover:underline">About Us</a></li>
+            <li><a href="#services" class="hover:underline">Services</a></li>
+            <li><a href="#testimonials" class="hover:underline">Testimonials</a></li>
+            <li><a href="#contact" class="hover:underline">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-white mb-4">Services</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline">Digital Strategy</a></li>
+            <li><a href="#" class="hover:underline">Business Consulting</a></li>
+            <li><a href="#" class="hover:underline">E-Commerce Solutions</a></li>
+            <li><a href="#" class="hover:underline">Analytics & Insights</a></li>
+            <li><a href="#" class="hover:underline">Process Automation</a></li>
+            <li><a href="#" class="hover:underline">Global Expansion</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-white mb-4">Account</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline">Profile</a></li>
+            <li><a href="#" class="hover:underline">Dashboard</a></li>
+            <li><a href="#" class="hover:underline">Settings</a></li>
+            <li><a href="#" class="hover:underline">Billing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-white mb-4">Resources</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline">Blog</a></li>
+            <li><a href="#" class="hover:underline">Case Studies</a></li>
+            <li><a href="#" class="hover:underline">Events</a></li>
+            <li><a href="#" class="hover:underline">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-white mb-4">Subscribe</h3>
+          <input type="email" placeholder="Enter your business email" class="w-full px-4 py-2 text-black rounded border border-gray-300 mb-2" />
+          <button class="w-full bg-white text-black font-semibold px-4 py-2 rounded">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row justify-between items-center mt-6 text-sm text-gray-300">
+      <p>Copyright © 2025 BizGrowth Consulting. All rights reserved.</p>
+      <div class="flex gap-4 mt-4 md:mt-0">
+        <a href="#" class="hover:underline">Privacy Policy</a>
+        <a href="#" class="hover:underline">Terms & Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+
+  const testimonials = [
+   {
+    quote:
+      "Partnering with this agency transformed our digital marketing strategy. We saw a 120% increase in leads within 3 months.",
+    name: "Samantha Lee",
+    designation: "Marketing Director, NovaTech",
+    src:
+      "https://images.unsplash.com/photo-1512316609839-ce289d3eba0a?q=80&w=1368&auto=format&fit=crop"
+  },
+  {
+    quote:
+      "Their team understood our vision and delivered a sleek, responsive website that reflects our brand perfectly.",
+    name: "Ravi Sharma",
+    designation: "CEO, CoreSolutions",
+    src:
+      "https://images.unsplash.com/photo-1628749528992-f5702133b686?q=80&w=1368&auto=format&fit=crop"
+  },
+  {
+    quote:
+      "The support and technical expertise provided were unmatched. Our e-commerce conversions went up by 80%!",
+    name: "Isabella Tran",
+    designation: "E-Commerce Manager, UrbanBazaar",
+    src:
+      "https://images.unsplash.com/photo-1524267213992-b76e8577d046?q=80&w=1368&auto=format&fit=crop"
+  }
+];
+
+let activeIndex = 0;
+const imageContainer = document.getElementById("image-container");
+const nameElement = document.getElementById("name");
+const designationElement = document.getElementById("designation");
+const quoteElement = document.getElementById("quote");
+const prevButton = document.getElementById("prev-button");
+const nextButton = document.getElementById("next-button");
+
+function updateTestimonial(direction) {
+  activeIndex = (activeIndex + direction + testimonials.length) % testimonials.length;
+
+  testimonials.forEach((testimonial, index) => {
+    let img = imageContainer.querySelector(`[data-index="${index}"]`);
+    if (!img) {
+      img = document.createElement("img");
+      img.src = testimonial.src;
+      img.alt = testimonial.name;
+      img.classList.add("testimonial-image");
+      img.dataset.index = index;
+      imageContainer.appendChild(img);
+    }
+
+    img.style.zIndex = index === activeIndex ? 1 : 0;
+    img.style.opacity = index === activeIndex ? 1 : 0;
+  });
+
+  nameElement.textContent = testimonials[activeIndex].name;
+  designationElement.textContent = testimonials[activeIndex].designation;
+  quoteElement.innerHTML = testimonials[activeIndex].quote
+    .split(" ")
+    .map((word) => `<span class='inline-block opacity-0 translate-y-2 blur-sm transition duration-300 delay-[${Math.random()*200}ms]'>${word}</span>`) // animate per word
+    .join(" ");
+
+  requestAnimationFrame(() => {
+    quoteElement.querySelectorAll("span").forEach((span) => {
+      span.classList.remove("opacity-0", "translate-y-2", "blur-sm");
+    });
+  });
+}
+
+function handleNext() { updateTestimonial(1); }
+function handlePrev() { updateTestimonial(-1); }
+
+prevButton.addEventListener("click", handlePrev);
+nextButton.addEventListener("click", handleNext);
+
+updateTestimonial(0);
+const autoplay = setInterval(() => updateTestimonial(1), 5000);
+[prevButton, nextButton].forEach(btn => btn.addEventListener("click", () => clearInterval(autoplay)));
+</script>
+
+
+
+</script>
+
+
+</body>
+</html>
